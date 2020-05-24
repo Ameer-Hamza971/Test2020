@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+{% for x in allAns %}
+<div class="teacherMain">
+    <p class="teachersAns name">Name: {{x.name}}</p>
+    <p class="teachersAns roll">Roll Number: {{x.rollNo}}</p>
+    <p class="teachersAns ans"><span class="ansTitle">Answer No 01: </span>{{x.ans_no_1}}</p>
+    <p class="teachersAns ans"><span class="ansTitle">Answer No 02: </span>{{x.ans_no_2}}</p>
+    <p class="teachersAns ans"><span class="ansTitle">Answer No 03: </span>{{x.ans_no_3}}</p>
+    <p class="teachersAns ans"><span class="ansTitle">Answer No 04: </span>{{x.ans_no_4}}</p>
+    <p class="teachersAns ans"><span class="ansTitle">Answer No 05: </span>{{x.ans_no_5}}</p>
+    <div class="dis">
+
+    </div>
+</div>
+{% endfor %}
+{% endblock content %}

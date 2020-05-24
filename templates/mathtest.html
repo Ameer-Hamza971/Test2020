@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<div class="main">
+    <div class="container wrap">
+        <div class="row">
+            <div class="col-md-8 col-sm-4 central">
+                {% for x in question %}
+                <h1 class="head">GRADE: {{x.grade}}</h1>
+                <h2 class="sub">SUBJECT: {{x.Sub}}</h2>
+                <div class="distance"></div>
+                <form action="" method="POST">
+                    {% csrf_token %}
+                    <div class="details">
+                        <div class="ansHead">Your Name</div>
+                        <input type="text" name="std_name" id="std_name">
+                        <div class="ansHead">Your Roll Number</div>
+                        <input type="text" name="rollNo" id="rollNo">
+                    </div>
+                    <div class="distance"></div>
+                    <p class="questions"><img src="{% static 'images/mark.png' %}" alt="">{{x.q_no_1}}</p>
+                    <div class="ansHead">Your Answer</div>
+                    <textarea name="MathAns1" id="MathAns1"></textarea>
+                    <p class="questions"><img src="{% static 'images/mark.png' %}" alt="">{{x.q_no_2}}</p>
+                    <div class="ansHead">Your Answer</div>
+                    <textarea name="MathAns2" id="MathAns2"></textarea>
+                    <p class="questions"><img src="{% static 'images/mark.png' %}" alt="">{{x.q_no_3}}</p>
+                    <div class="ansHead">Your Answer</div>
+                    <textarea name="MathAns3" id="MathAns3"></textarea>
+                    <p class="questions"><img src="{% static 'images/mark.png' %}" alt="">{{x.q_no_4}}</p>
+                    <div class="ansHead">Your Answer</div>
+                    <textarea name="MathAns4" id="MathAns4"></textarea>
+                    <p class="questions"><img src="{% static 'images/mark.png' %}" alt="">{{x.q_no_5}}</p>
+                    <div class="ansHead">Your Answer</div>
+                    <textarea name="MathAns5" id="MathAns5"></textarea>
+                    <input type="submit">
+                </form>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

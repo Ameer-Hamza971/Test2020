@@ -1,0 +1,148 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    background: #304ffe;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #768fff;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #304ffe;
+  }
+.navbar {
+    background: #0026ca;
+    padding: 0px 10px 3px 10px!important;
+}
+.navbar li {
+    padding: 5px 0px;
+    background: inherit;
+}
+.collapse {
+    justify-content: flex-end;
+    background: inherit;
+}
+.navbar ul {
+    background: #0026ca!important;
+}
+.navbar li:hover {
+    box-shadow: 3px 3px 0px #7a7cff;
+    background: #304ffe;
+    color: white;
+}
+.navbar a {
+    color: white;
+}
+.navbar a:hover {
+    color: white;
+}
+/* ----------------Qusetion Page------------ */
+div.main {
+    width: 100%;
+    height: 100%;
+    background: white;
+}
+div.wrap {
+    margin: 0px;
+    width: 100%;
+    max-width: 100%;
+    padding-top: 70px;
+}
+.central {
+    margin: 0px auto;
+}
+.questions {
+    margin: 0px;
+    padding: 5px 0px;
+    /* background: white; */
+    color: white;
+}
+.questions img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+div.distance {
+    height: 40px;
+}
+.main textarea {
+    width: 100%;
+    height: 200px;
+    background: white;
+    padding: 10px;
+}
+.details input {
+    padding: 4px;
+    background: white;
+    border: 2px solid wheat;
+    width: 100%;
+}
+.head {
+    margin: 0px;
+    color: white;
+    text-align: center;
+    padding: 5px 0px;
+    background: #0026ca;
+}
+.sub {
+    margin: 0px;
+    background: #768fff;
+    text-align: center;
+    color: black;
+    padding: 4px 0px;
+}
+div.ansHead {
+    padding: 4px 0px;
+    color: white;
+    background: #0026ca;
+    text-align: center;
+}
+/* TECHERS DISPLAY */
+.teacherMain {
+    width: 100%;
+    margin: 0px auto;
+}
+.teachersAns {
+    margin: 0px;
+    padding: 10px;
+    color: white;
+}
+.teacherMain .name {
+    font-size: 20px;
+    background: #0026ca;
+    color: white;
+    text-align: center;
+    font-weight: 800;
+}
+.teacherMain .roll {
+    background: #768fff;
+    text-align: center;
+    font-weight: 800;
+    color: black;
+}
+.ans {
+    border-bottom: 2px solid #0026ca;
+    text-align: justify;
+    padding: 10px 20px;
+}
+.dis {
+    height: 20px;
+    background: white;
+}
+.ansTitle {
+    font-size: 20px;
+    /* border-bottom: 2px solid #0026ca; */
+    font-weight: 800;
+}
